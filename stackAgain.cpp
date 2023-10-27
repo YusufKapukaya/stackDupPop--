@@ -230,8 +230,8 @@ int main()
 {
     cout<<"Choice your operations (POP, DUP, +, -, number, break)"<<endl;
     string b;
-    cin>>b;     //cin ile String alinca isleme giremiyorum
-    vector<string> arr=split(b,"/");
+    getline(cin,b)
+    vector<string> arr=split(b," ");
     StringMashine stringMashine(arr);
     float result=stringMashine.getResult();
     cout<<result;
